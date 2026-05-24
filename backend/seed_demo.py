@@ -9,7 +9,7 @@ async def seed():
     print("Connecting to MongoDB on port 27018...")
     MONGO_URI = os.getenv("MONGO_URI", "mongodb://127.0.0.1:27018/?replicaSet=rs0&directConnection=true")
     client = AsyncIOMotorClient(MONGO_URI)
-    db = client["fastapi_cdc"]
+    db = client[os.getenv("DB_NAME", "push_architecture_db")]
     coll = db["orders"]
 
     print("Clearing original demo orders only (preserving custom/simulated data)...")
@@ -382,6 +382,7 @@ async def seed():
     # -------------------------------------
     # User accounts seeding
     # -------------------------------------
+    users_coll = db["users"]
     print("Clearing original demo users only...")
     emails_to_clear = ["alice@example.com", "bob@example.com", "charlie@example.com", "diana@example.com", "ethan@example.com", "fiona@example.com", "george@example.com", "hannah@example.com", "ian@example.com", "julia@example.com", "admin@example.com", "admin1@example.com", "admin2@example.com"]
     await users_coll.delete_many({"email": {"$in": emails_to_clear}})

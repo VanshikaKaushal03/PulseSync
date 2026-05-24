@@ -11,7 +11,8 @@ from backend.cdc_listener import watch_collection, watch_custom_uri
 from pydantic import BaseModel
 from backend.delivery_router import router
 from backend.models.order import OrderBase, OrderInDB
-from backend.models.user import UserCreate, UserInDB, Token, TokenData
+from backend.auth import get_password_hash, verify_password, create_access_token, get_current_user, get_admin_user
+from backend.models.user import TokenData, UserCreate, Token
 from backend.database import MONGO_URI
 db_host = "mongo1" if "mongo1" in MONGO_URI else "localhost"
 

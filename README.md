@@ -44,7 +44,7 @@ The application is designed to run out-of-the-box using safe local defaults. How
 | :--- | :--- | :--- |
 | `MONGO_URI` | Connection URI for the MongoDB Replica Set | `mongodb://127.0.0.1:27018/?replicaSet=rs0` |
 | `REDIS_URI` | Connection URI for the Redis broker | `redis://localhost:6379/0` |
-| `DB_NAME` | Primary database name for CDC and users | `fastapi_cdc` |
+| `DB_NAME` | Primary database name for CDC and users | `push_architecture_db` |
 
 ---
 
@@ -74,23 +74,32 @@ Once the build completes and MongoDB healthchecks verify a healthy ReplicaSet:
 If you prefer to run the services natively on your local machine, follow these steps:
 
 ### 1. Pre-requisites
-Make sure you have MongoDB running locally on port **`27018`** as a replica set named **`rs0`**.
+- **MongoDB 8.0+** installed (the script expects `mongod.exe` to be available at `C:\Program Files\MongoDB\Server\8.0\bin\`)
+- **Python 3.11+** with virtual environment created (`venv`)
+- **Node.js 20+** for the frontend
 
-### 2. Standardize & Seed the Database
-Ensure the product inventory and default demo orders are standard and loaded:
+### 2. Start Services Locally
+We have provided an automated startup script `start_local.ps1` that handles starting MongoDB (with replica set `rs0` on port `27018`), the FastAPI backend, and the Vite frontend.
+
 ```bash
-# Activate virtualenv and run the demo seed script
+# Run from the project root:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\start_local.ps1
+```
+
+This will automatically open separate windows for the frontend and backend. You can then access:
+* **Admin Dashboard:** [http://localhost:5173/admin/dashboard](http://localhost:5173/admin/dashboard)
+* **Customer Tracker:** [http://localhost:5173/client/tracker](http://localhost:5173/client/tracker)
+* **Backend API:** [http://localhost:8000](http://localhost:8000)
+
+### 3. Standardize & Seed the Database
+Ensure the product inventory, users, and default demo orders are standard and loaded. After the backend is running, execute:
+```bash
+# Activate virtualenv and run the demo seed scripts
 .\venv\Scripts\python.exe backend/seed_demo.py
+.\venv\Scripts\python.exe backend/seed_inventory.py
 ```
 *Note: The seed script uses selective clearing, so any custom orders or simulated logs you generate will be fully preserved across script runs.*
-
-### 3. Start the FastAPI Backend
-Serve both the FastAPI APIs and the React SPA under a single, unified port (`8000`):
-```bash
-# Start backend and SPA static files
-.\venv\Scripts\python.exe -m uvicorn backend.main:app --port 8000
-```
-👉 Open your browser to: **[http://localhost:8000](http://localhost:8000)** (SPA React routing will load dynamically).
 
 ### 4. Start the Background CDC Traffic Simulator (Optional)
 To generate ongoing e-commerce transactions and see live real-time metrics spikes on the dashboard charts, run:

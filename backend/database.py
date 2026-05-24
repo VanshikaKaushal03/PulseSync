@@ -5,7 +5,7 @@ import redis.asyncio as redis
 # Environment variables or defaults
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://127.0.0.1:27018/?replicaSet=rs0")
 REDIS_URI = os.getenv("REDIS_URI", "redis://localhost:6379/0")
-DB_NAME = os.getenv("DB_NAME", "fastapi_cdc")
+DB_NAME = os.getenv("DB_NAME", "push_architecture_db")
 
 class Database:
     client: AsyncIOMotorClient = None

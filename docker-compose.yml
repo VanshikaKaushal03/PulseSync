@@ -33,6 +33,7 @@ services:
     environment:
       - MONGO_URI=mongodb://mongo1:27018/?replicaSet=rs0&directConnection=true
       - REDIS_URI=redis://redis:6379/0
+      - DB_NAME=push_architecture_db
     depends_on:
       mongo1:
         condition: service_healthy
