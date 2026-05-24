@@ -1,0 +1,199 @@
+INFO:     Will watch for changes in these directories: ['C:\\Van\\atypicsl']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [33636] using WatchFiles
+INFO:     Started server process [14588]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Connected to MongoDB at mongodb://127.0.0.1:27018/?replicaSet=rs0
+Connected to Redis at redis://localhost:6379/0
+Cleared stale connected clients from all databases on startup.
+Listening to MongoDB Change Stream on entire database (excluding internal collections)...
+Listening to custom MongoDB Change Stream for source: src_mongo_1
+Listening to custom MongoDB Change Stream for source: src_mongo_2
+Listening to custom MongoDB Change Stream for source: src_mongo_3
+Listening to custom MongoDB Change Stream for source: src_mongo_4
+Detected change: insert on {'_id': ObjectId('6a12f1522bf8fb26f0af3a43')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f13f2bf8fb26f0af3a41')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1592bf8fb26f0af3a44')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f15d2bf8fb26f0af3a45')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1602bf8fb26f0af3a46')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1642bf8fb26f0af3a47')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f13f2bf8fb26f0af3a41')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f14b2bf8fb26f0af3a42')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f14b2bf8fb26f0af3a42')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1702bf8fb26f0af3a48')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f14b2bf8fb26f0af3a42')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1772bf8fb26f0af3a49')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f17a2bf8fb26f0af3a4a')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f17f2bf8fb26f0af3a4b')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1822bf8fb26f0af3a4c')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1852bf8fb26f0af3a4d')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1522bf8fb26f0af3a43')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1522bf8fb26f0af3a43')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1902bf8fb26f0af3a4e')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1522bf8fb26f0af3a43')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1972bf8fb26f0af3a4f')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1992bf8fb26f0af3a50')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1592bf8fb26f0af3a44')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1a22bf8fb26f0af3a51')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1592bf8fb26f0af3a44')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1592bf8fb26f0af3a44')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f15d2bf8fb26f0af3a45')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f15d2bf8fb26f0af3a45')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1b72bf8fb26f0af3a52')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f15d2bf8fb26f0af3a45')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1602bf8fb26f0af3a46')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1602bf8fb26f0af3a46')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1602bf8fb26f0af3a46')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1642bf8fb26f0af3a47')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1c72bf8fb26f0af3a53')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1642bf8fb26f0af3a47')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1cc2bf8fb26f0af3a54')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1d02bf8fb26f0af3a55')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1642bf8fb26f0af3a47')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1702bf8fb26f0af3a48')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1702bf8fb26f0af3a48')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1dd2bf8fb26f0af3a56')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1e02bf8fb26f0af3a57')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1702bf8fb26f0af3a48')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1772bf8fb26f0af3a49')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1772bf8fb26f0af3a49')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1ec2bf8fb26f0af3a58')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1f02bf8fb26f0af3a59')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1772bf8fb26f0af3a49')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17a2bf8fb26f0af3a4a')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1f92bf8fb26f0af3a5a')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17a2bf8fb26f0af3a4a')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f1ff2bf8fb26f0af3a5b')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2022bf8fb26f0af3a5c')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2062bf8fb26f0af3a5d')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17a2bf8fb26f0af3a4a')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17f2bf8fb26f0af3a4b')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17f2bf8fb26f0af3a4b')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2132bf8fb26f0af3a5e')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f17f2bf8fb26f0af3a4b')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1822bf8fb26f0af3a4c')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f21d2bf8fb26f0af3a5f')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2212bf8fb26f0af3a60')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1822bf8fb26f0af3a4c')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1822bf8fb26f0af3a4c')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1852bf8fb26f0af3a4d')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1852bf8fb26f0af3a4d')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2302bf8fb26f0af3a61')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2352bf8fb26f0af3a62')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1852bf8fb26f0af3a4d')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f23b2bf8fb26f0af3a63')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1902bf8fb26f0af3a4e')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2422bf8fb26f0af3a64')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1902bf8fb26f0af3a4e')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2492bf8fb26f0af3a65')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f24cba1d9f72e23b71be')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f24c2bf8fb26f0af3a66')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2502bf8fb26f0af3a67')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f253ba1d9f72e23b71c1')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2532bf8fb26f0af3a68')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f255ba1d9f72e23b71c2')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f255ba1d9f72e23b71c4')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1902bf8fb26f0af3a4e')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1972bf8fb26f0af3a4f')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1972bf8fb26f0af3a4f')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1972bf8fb26f0af3a4f')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1992bf8fb26f0af3a50')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1992bf8fb26f0af3a50')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f26a2bf8fb26f0af3a69')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1992bf8fb26f0af3a50')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1a22bf8fb26f0af3a51')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: update on {'_id': ObjectId('6a12f1a22bf8fb26f0af3a51')}
+Redis publish error: Error Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+Detected change: insert on {'_id': ObjectId('6a12f2782bf8fb26f0af3a6a')}

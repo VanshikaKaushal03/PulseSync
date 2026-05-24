@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # MongoDB primary node
+  mongo1:
+    image: mongo:6.0
+    container_name: mongo1
+    command: ["--replSet", "rs0", "--bind_ip_all", "--port", "27018"]
+    ports:
+      - "27018:27018"
+    healthcheck:
+      test: ["CMD", "mongosh", "--port", "27018", "--quiet", "--eval", "try { rs.initiate({_id:'rs0',members:[{_id:0,host:'127.0.0.1:27018'}]}) } catch(e) {}; db.adminCommand('ping')"]
+      interval: 10s
+      start_period: 30s
+    volumes:
+      - mongo-data:/data/db
+
+  # Redis for pub/sub and backpressure
+  redis:
+    image: redis:7.0-alpine
+    container_name: redis_queue
+    ports:
+      - "6379:6379"
+
+  # FastAPI Backend
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: pulsesync_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://mongo1:27018/?replicaSet=rs0&directConnection=true
+      - REDIS_URI=redis://redis:6379/0
+    depends_on:
+      mongo1:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  # React Frontend
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: pulsesync_web
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+volumes:
+  mongo-data:

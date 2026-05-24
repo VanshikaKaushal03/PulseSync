@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gray-950: #0a0a0a;
+  --color-gray-900: #141416;
+  --color-gray-800: #1f1f23;
+  --color-gray-700: #2d2d31;
+  
+  --color-indigo-300: #e4e4e7;
+  --color-indigo-400: #a1a1aa;
+  --color-indigo-500: #52525b;
+  --color-indigo-600: #27272a;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-gray-950);
+    color: #e4e4e7;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-700);
+}
+
+/* Base styles for PulseSync glass components */
+.glass-panel {
+  @apply bg-gray-900/60 backdrop-blur-md border border-gray-800 rounded-xl shadow-2xl;
+}
