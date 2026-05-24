@@ -1,0 +1,79 @@
+# ==============================================================================
+# Global / OS / Editor Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.gemini/
+
+# ==============================================================================
+# Python Environment
+# ==============================================================================
+venv/
+ENV/
+env/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+backend/__pycache__/
+backend/models/__pycache__/
+
+# ==============================================================================
+# Node & Frontend Build
+# ==============================================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.eslintcache
+
+# ==============================================================================
+# Local Databases & Persistent State
+# ==============================================================================
+mongodb-data/
+mongodb-data/*
+.system_generated/
+appDataDir/
+brain/
+scratch/
+
+# ==============================================================================
+# Debug logs and diagnostic logs
+# ==============================================================================
+*_log.txt
+*.log
+frontend_log.txt
+mongod_error.txt
+simulate_log.txt
+uvicorn_log.txt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# Local test & simulation scripts (should not be in git)
+# ==============================================================================
+manual_db_test.py
+test_mongo.py
+test_sse.py
+test_trace.py
+test_ws.py
+query
+
+# Simulation scripts
+backend/simulate_clients.py
+backend/simulate_traffic.py
+backend/simulate_live_updates.py
+backend/run_dummy_clients.py
