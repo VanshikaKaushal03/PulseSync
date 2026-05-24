@@ -12,7 +12,8 @@ from pydantic import BaseModel
 from backend.delivery_router import router
 from backend.models.order import OrderBase, OrderInDB
 from backend.models.user import UserCreate, UserInDB, Token, TokenData
-from backend.auth import get_password_hash, verify_password, create_access_token, get_current_user, get_admin_user
+from backend.database import MONGO_URI
+db_host = "mongo1" if "mongo1" in MONGO_URI else "localhost"
 
 app = FastAPI(title="Hybrid Push Architecture API")
 
@@ -151,7 +152,7 @@ async def create_order(order: OrderBase, current_user: TokenData = Depends(get_c
         raise HTTPException(status_code=400, detail="Order must have at least one item")
         
     # Fetch product details from inventory database to validate and snapshot
-    inventory_client = AsyncIOMotorClient("mongodb://localhost:27018/?replicaSet=rs0&directConnection=true")
+    inventory_client = AsyncIOMotorClient(f"mongodb://{db_host}:27018/?replicaSet=rs0&directConnection=true")
     inventory_db = inventory_client.inventory
     
     try:
@@ -430,7 +431,7 @@ async def get_inventory_products():
     """
     from motor.motor_asyncio import AsyncIOMotorClient
     from datetime import datetime
-    inventory_client = AsyncIOMotorClient("mongodb://localhost:27018/?replicaSet=rs0&directConnection=true")
+    inventory_client = AsyncIOMotorClient(f"mongodb://{db_host}:27018/?replicaSet=rs0&directConnection=true")
     inventory_db = inventory_client.inventory
     
     # Fetch all products from products collection
@@ -525,7 +526,7 @@ async def get_source_data(source_id: str):
     uri = source.get("uri", "mongodb://localhost:27018/?replicaSet=rs0")
     # Quick normalization of local URIs if needed
     if "localhost" in uri or "127.0.0.1" in uri or "mongo1" in uri:
-        uri = "mongodb://localhost:27018/?replicaSet=rs0&directConnection=true"
+        uri = f"mongodb://{db_host}:27018/?replicaSet=rs0&directConnection=true"
         
     client = AsyncIOMotorClient(uri)
     target_db = client[source["db_name"]]
@@ -574,7 +575,7 @@ async def query_collection(db_name: str, collection: str, filters: str = "{}"):
     except Exception:
         filter_obj = {}
 
-    uri = "mongodb://localhost:27018/?replicaSet=rs0&directConnection=true"
+    uri = f"mongodb://{db_host}:27018/?replicaSet=rs0&directConnection=true"
     client = AsyncIOMotorClient(uri)
     target_db = client[db_name]
 
